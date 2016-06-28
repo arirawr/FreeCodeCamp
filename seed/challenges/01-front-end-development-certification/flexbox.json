@@ -1,0 +1,78 @@
+{
+  "name": "Flexbox",
+  "order": 4,
+  "time": "5 hours",
+  "helpRoom": "Help",
+  "challenges": [
+    {
+      "id": "507f1f77bcf86cd799439011",
+      "title": "Use the Flexible Box Display Property on a Container",
+      "description": [
+        "The Flexbox Layout module helps you to dynamically align and arrange items within a container.",
+        "Bootstrap will figure out how wide your screen is and respond by resizing your HTML elements - hence the name <code>Responsive Design</code>.",
+        "With responsive design, there is no need to design a mobile version of your website. It will look good on devices with screens of any width.",
+        "You can add Bootstrap to any app just by including it by adding the following code to the top of your HTML:",
+        "<code>&#60;link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css\"/&#62;</code>",
+        "In this case, we've already added it for you to this page behind the scenes.",
+        "To get started, we should nest all of our HTML in a <code>div</code> element with the class <code>container-fluid</code>."
+      ],
+      "challengeSeed": [
+        "<link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\" type=\"text/css\">",
+        "<style>",
+        "  .container {",
+        "    width: 100%;",
+        "    background-color: aliceblue;",
+        "  }",
+        "",
+        "  .box {",
+        "    width: 100px;",
+        "    height: 100px;",
+        "    background-color: firebrick;",
+        "  }",
+        "",
+        "  p {",
+        "    font-size: 16px;",
+        "    font-family: Roboto;",
+        "  }",
+        "",
+        "  .blue {",
+        "    background-color: dodgerblue;",
+        "  }",
+        "</style>",
+        "",
+        "<div class=\"container\">",
+        "  <div class=\"box\"></div>",
+        "  <div class=\"box blue\"></div>",
+        "</div>",
+        ""
+      ],
+      "tests": [
+        "assert($(\".container\").css(\"display\")==\"flex\", 'message: The <code>display</code> property on your <code>container</code> class should be <code>flex</code>.');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure each of your <code>div</code> elements has a closing tag.');",
+        "assert($(\".container-fluid\").children().length >= 8, 'message: Make sure you have nested all HTML elements in <code>.container-fluid</code>.');"
+      ],
+      "type": "waypoint",
+      "challengeType": 0,
+      "titleEs": "Usa diseño adaptativo con los contenedores fluidos de Bootstrap",
+      "descriptionEs": [
+        "Ahora vamos de vuelta a nuestra aplicación de fotos de gatos. Esta vez, vamos a darle estilo utilizando la infraestructura CSS del popular Bootstrap.",
+        "Bootstrap determina qué tan ancha es la pantalla y adapta correspondientemente el tamaño de tus elementos HTML - por eso es que se llama <code>Diseño adaptativo</code> (responsive design).",
+        "Con diseño adaptativo, no hay necesidad de diseñar una versión móvil para tu sitio web. Se verá bien en dispositivos con pantallas de cualquier tamaño.",
+        "Puedes agregar Bootstrap a cualquier aplicación simplemente incluyendo el siguiente código al inicio de tu HTML:",
+        "<code>&#60;link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css\"/&#62;</code>",
+        "En este caso, lo hemos agregado a esta página por ti.",
+        "Para iniciar, debemos anidar todo nuestro HTML en un elemento <code>div</code> con la clase <code>container-fluid</code>."
+      ],
+      "nameFr": "Un design adaptatif (responsive design) utilisant les conteneurs fluides de Bootstrap",
+      "descriptionFr": [
+        "Revenons à notre application de photos de chats. Cette fois-ci, nous allons lui donner un style grâce au renommé framework CSS Bootstrap.",
+        "Bootstrap saura reconnaître la largeur de notre écran et s'y adapter en redimensionnant les éléments HTML - d'où le nom <code>Responsive Design</code> (design adaptatif).",
+        "Avec le design responsive, il n'y a pas besoin de créer de version mobile de votre site. Il restera bien sur tous les appareils quelle que soit la taille de leurs écrans.",
+        "Vous pouvez ajouter Bootstrap à n'importe quelle application simplement en incluant le code suivant en haut de votre HTML:",
+        "<code>&#60;link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css\"/&#62;</code>",
+        "Ici, nous l'avons déjà ajouté à la page pour vous dans l'arrière-boutique.",
+        "Pour commencer, nous devons envelopper nos éléments HTML dans un élément <code>div</code> possédant la classe <code>container-fluid</code>"
+      ]
+    }
+  ]
+}
